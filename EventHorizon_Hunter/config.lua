@@ -144,7 +144,7 @@ function EventHorizon:InitializeClass()
   })
 
 
-  --Marksmanship Bars
+  -  --Marksmanship Bars
   
       -- Murder of Crows
   self:newSpell({
@@ -158,7 +158,7 @@ function EventHorizon:InitializeClass()
     }
   })
   
-            -- Aimed Shot
+      -- Aimed Shot
   self:newSpell({
     requiredTree = 2,
     requiredLevel = 10,
@@ -183,10 +183,10 @@ function EventHorizon:InitializeClass()
     }
   })
   
-    -- Precise Shots
+    -- Trick Shots
   self:newSpell({
     requiredTree = 2,
-    playerbuff = {260242, 1.6 },
+    playerbuff = {257621, 1.6 },
     barcolors = {
       playerbuff  = {212/255, 020/255, 141/255, 0.6}
     }
@@ -226,10 +226,10 @@ function EventHorizon:InitializeClass()
     }
   })
 
-  -- Barrage
+      -- Barrage
   self:newSpell({
     requiredTree = 2,
-    requiredTalent = 17,
+    requiredTalent = 5,
     playerbuff = {8936,2},
     cooldown = 120360,
     channel = 120360,
@@ -239,46 +239,50 @@ function EventHorizon:InitializeClass()
     }
   })
 
---[[
-  -- Explosive Shot
+     -- Explosive Shot
   self:newSpell({
     requiredTree = 2,
-    requiredTalent = 10,
+    requiredTalent = 6,
     cooldown = 212431,
     barcolors = {
       cooldown  = {255/255, 168/255, 018/255, 0.5},
     }
   })
---]]
 
---[[ included as a half height CD under Hunter's mark above, that was Windburst but I put that on it's onw bar now.
-  -- Sentinel
+     -- Volley
   self:newSpell({
     requiredTree = 2,
-    requiredTalent = 11,
-    cooldown = 206817,
-    debuff = {185987, 6},
-    icon = 206817,
+    requiredTalent = 21,
+    cooldown = 260243,
     barcolors = {
-      cooldown  = {250/255, 245/255, 220/255, 0.5},
-      debuffmine  = {054/255, 059/255, 143/255, 0.7}
+      cooldown  = {255/255, 168/255, 018/255, 0.5},
     }
   })
-]]--
 
-  -- Trueshot
+    --Double Tap
   self:newSpell({
     requiredTree = 2,
-    requiredLevel = 40,
-    cooldown = 193526,
-    playerbuff = 193526,
+    requiredTalent = 18,
+    cooldown = 260402,
+    playerbuff = 260402,
     barcolors = {
       cooldown  = {171/255, 191/255, 181/255, 0.5},
       playerbuff  = {191/255, 242/255, 232/255, 0.7}
     }
   })
 
-  
+  -- Trueshot
+  self:newSpell({
+    requiredTree = 2,
+    requiredLevel = 40,
+    cooldown = 288613,
+    playerbuff = 288613,
+    barcolors = {
+      cooldown  = {171/255, 191/255, 181/255, 0.5},
+      playerbuff  = {191/255, 242/255, 232/255, 0.7}
+    }
+  })
+
  -- Survival Bars
 
   -- Serpent Sting
